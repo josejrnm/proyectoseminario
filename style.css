@@ -1,0 +1,169 @@
+@media only screen and (min-width: 800px){
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/17/84/d0/40/vista-aerea-del-campus.jpg);
+    background-repeat: repeat;
+    /*background-image: linear-gradient(75deg, #fad787 0, #efda87 3.33%, #e4de88 6.67%, #d8e18c 10%, #cce491 13.33%, #bfe797 16.67%, #b2e99f 20%, #a5eba7 23.33%, #97edb1 26.67%, #89eebc 30%, #7bf0c7 33.33%, #6cf0d2 36.67%, #5df1de 40%, #4ff1e9 43.33%, #42f1f4 46.67%, #38f0ff 50%, #35efff 53.33%, #3beeff 56.67%, #47ecff 60%, #57eaff 63.33%, #69e7ff 66.67%, #7ce5ff 70%, #8fe1ff 73.33%, #a2deff 76.67%, #b4daff 80%, #c5d6ff 83.33%, #d6d2ff 86.67%, #e5ceff 90%, #f3caff 93.33%, #ffc6ff 96.67%, #ffc3ff 100%);*/
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#rutase{
+    font-size: 3.4em;
+    color: white;
+    margin-left: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#quesomos{
+    font-size: 1em;
+    color: white;
+    margin-right: 15px;
+}
+
+#cabecera{
+    background: rgba( 100, 7, 190, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    width: 100%;
+    height: 70px;
+    position: static;
+    margin-bottom: 2em;
+    text-align: left;
+    padding-top: 1.3em;
+    padding-bottom: 1.6em;
+}
+h2#ini{
+    font-size: 2.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        -webkit-text-fill-color: rgba( 255, 251, 0);
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color:rgb(160, 0, 170) ; 
+   
+}
+
+img.imagenusuario{
+    width: 250px;
+    height: 250px;
+    margin-top: 0.4em;
+}
+
+input{
+    color: rgb(0, 0, 0);
+    margin-top: 3%;
+    margin-bottom: 0.3em;
+    width: 200px;
+    height: 34px;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inisio#inisio{
+    background: rgba( 100, 7, 190, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 60px;
+    width: 360px;
+    height: 400px;
+    margin:auto;
+    padding-top: 5em;
+}
+.inisio#invisio{
+    background: rgba( 100, 7, 190, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 60px;
+    width: 360px;
+    height: 400px;
+    margin:auto;
+    padding-top: 5em;
+}
+.separador{
+    width: 50%;
+}
+button{
+    color: rgb(100, 07, 190);
+    margin-top: 20px;
+    margin-bottom: 0.3em;
+    width: 140px;
+    height: 30px;
+    background: rgb(255, 230, 0);
+    text-align: center;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button#invitado{
+    color: rgb(100, 07, 190);
+    margin-top: 20px;
+    margin-bottom: 0.3em;
+    width: 220px;
+    height: 40px;
+    background: rgb(255, 230, 0);
+    text-align: center;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button#ini{
+    color: rgb(100, 07, 190);
+    margin-top: 20px;
+    margin-bottom: 0.3em;
+    width: 220px;
+    height: 40px;
+    background: rgb(255, 230, 0);
+    text-align: center;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#registro{
+    margin-top: 1em;
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        -webkit-text-fill-color: rgb(255, 255, 255);
+        -webkit-text-stroke: 0.2px;
+        -webkit-text-stroke-color:rgb(0, 0, 0) ;
+}
+#regis{
+    text-decoration-color: transparent;
+    font-weight: bolder;
+    -webkit-text-fill-color: rgb(255, 251, 0);
+        -webkit-text-stroke: 0.2px;
+        -webkit-text-stroke-color:rgb(255, 0, 0) ;    
+}
+#datosinicio{
+    display: none;
+}
+#datosdeinvitado{
+    display: none;
+}
+h3{
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        -webkit-text-fill-color: rgba( 255, 251, 0);
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color:rgb(160, 0, 170) ;
+        margin-top:1em;
+        margin-bottom: 0.6em;
+}
+}
+@media only screen and (max-width: 800px){
+    *{
+        display: none;
+    }
+}

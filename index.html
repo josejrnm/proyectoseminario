@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="App de geolocaliacion">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Ruta Segura</title>
+</head>
+<body>
+    
+    <div id="cabecera"><span id="rutase"><img src="https://image.flaticon.com/icons/png/512/70/70142.png" alt="mapaaa" style="width: 70px; height: 70px; filter: invert();"> Ruta Segura</span> <div style="text-align: right;">
+        <span id="quesomos">¿Quienes somos? | Contáctanos 
+            <a href="index.html" id="volver">| <-Volver </a></span></div>
+    </div>
+    </div>
+    <!--Aqui empieza la primera seccion-->
+    <table id="tablaini" style="width:100%">
+        <tr>
+            <th class="separador">
+                <section id="inisio" class="inisio">
+                    <div >
+                        <img id="image" class="imagenusuario" src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt="usuario">
+                    </div>
+                    <button id="ini" >Iniciar Sesion</button>
+                    <div id="datosinicio">
+                        <form>
+                            <input type="text" name="Nombre" id="nombre" placeholder="Nombre de usuario" ><br>
+                            <input type="password" data-="pass" name="password" id="Contraseña" placeholder="Contraseña">
+                        </form>
+                        <button type="button" onclick="captura(), cerra()" id="ingru">Ingresar</button>
+                        <div id="registro">
+                            <span>Recuperar Contraseña</span><br><br>
+                            <span>¿No tienes una cuenta? <a id="regis" href="#">Registrate</a></span>
+                        </div>
+                    </div>
+                </section>
+            </th>
+            <th class="separador">
+                <section id="invisio" class="inisio" >
+                    <div >
+                        <img id="image2" class="imagenusuario" src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt="usuario" style="filter: invert();">
+                    </div>
+                    <button id="invitado">Usar Sin Registro</button>
+                    <div id="datosdeinvitado">
+                        <h3>¿Cómo te podemos llamar...?</h3>
+                        <form>
+                        <input type="text" name="Nombre" id="nombre2" placeholder="Ingresa un Apodo" "><br>
+                        </form>
+                        <button type="button" onclick="captura1(), volve()" id="ingruinv">Entrar</button>
+                    </div>
+                </section>
+            </th>
+        </tr>
+    </table>
+
+    <!--aqui empieza la segunda seccion-->
+
+<section id="enrutacionario">
+    <div id="enrutador">
+        <div id="cabeini">
+            <h2 id="ini2" >Hola, <span id="usera"></span>. Veamos cual es la mejor ruta!</h2>
+        </div>
+
+        <div id="askk">
+            <span>¿A dónde quieres ir?</span>
+        </div>
+        <div class="punto">
+            <h2>Punto de Partida</h2>
+            <select name="Salida" id="salidaps">
+                <option value="0">Entrada Principal</option> 
+                <option value="1">Bloque Administrativo</option>
+                <option value="2">Bloque III - Salas de Internet</option>
+                <option value="3">Bloque VII - Biblioteca</option> 
+                <option value="4">Bloque VIII - Gorgona</option>                
+                <option value="5">Edifico Sierra Nevada</option> 
+                <option value="6">Edifico Ciénaga Grande</option>
+                <option value="7">Edificio Docente</option>
+                <option value="8">Plazoleta Central</option>
+                <option value="9">Cafeteria Central</option>
+                <option value="10">Hangares - Laboratorios Facultad de Ingenieria</option>
+                <option value="11">Edificio Mar Caribe</option>
+             </select>
+        </div>
+        <div class="punto">
+            <h2>Punto de Llegada</h2>
+            <select name="Llegadaa" id="llegadaps">
+                <option value="0">Entrada Principal</option> 
+                <option value="1">Bloque Administrativo</option>
+                <option value="2">Bloque III - Salas de Internet</option>
+                <option value="3">Bloque VII - Biblioteca</option> 
+                <option value="4">Bloque VIII - Gorgona</option>                
+                <option value="5">Edifico Sierra Nevada</option> 
+                <option value="6">Edifico Ciénaga Grande</option>
+                <option value="7">Edificio Docente</option>
+                <option value="8">Plazoleta Central</option>
+                <option value="9">Cafeteria Central</option>
+                <option value="10">Hangares - Laboratorios Facultad de Ingenieria</option>
+                <option value="11">Edificio Mar Caribe</option>
+             </select>
+        </div>
+        <div>
+            <button id="rurutas" onclick="locores()">Generar Rutas</button>
+        </div>
+    </div>
+</section>
+
+<!--Aqui empieza la tercera seccion-->
+
+<section id="mapaderutas">
+    <button style="
+    background-color: white;
+    border-radius: 20px;
+    height: 60px;
+    width: 129px;
+    position: fixed;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 15px;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0px 0px 5px 2spx rgba(250, 3, 229, 0.466);
+    " onclick="rerutar()">Nueva Ruta</button>
+    <div style="width: 80%; margin-left: 110px;">
+             <h3 id="titilo">Mejores Rutas de <span id="pusali" style="color: rgb(0, 225, 255);"></span> a <span id="pullega" style="color: rgb(0, 225, 255);"></span></h3>
+    </div>
+    <br>
+    <img src="Rutas/map1.jpg" alt="maparu" id="maparu">
+    <br>        
+    <div  id="download">
+             <a href="#" style="text-decoration: none;"><img src="https://img.icons8.com/material/452/download--v1.png" alt="Descargar Mapa"  style="width: 30px; height: 20px;"></a>
+    </div>
+    <br>
+    <div id="infor">
+        <h3 style="font-size: 45px; color: yellow;">Indicaciones</h3> <br>
+        <p>
+            <canvas style="width: 90px; height: 20px; background-color: rgb(53, 255, 53);"></canvas>
+            Mejor Opción: <i>Ruta mas rapida, mejores condiciones del camino, mayor accesibilidad</i>
+        </p><br>
+        <p>
+            <canvas style="width: 90px; height: 20px; background-color: rgb(238, 255, 0);"></canvas>
+            Ruta Imparcial: <i>Ruta alterna, condiciones del camino aceptable</i>
+        </p><br>
+        <p>
+            <canvas style="width: 90px; height: 20px; background-color: rgb(255, 0, 0);"></canvas>
+            Ruta Inapropiadad: <i>Mayor recorrido, el camino presenta desniveles u otros defectos</i>
+        </p>
+    </div>
+    <div 
+        style=
+            "background-color: rgba(234, 0, 255, 0.493);
+            color: rgb(255, 183, 219);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 760px;
+            height: 50px;
+            padding-bottom: 1.4em;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: 0.4em;
+            margin: auto; 
+            margin-top: 2em;
+            font-size: 22px;">
+            <i>Nota: Las rutas son seleccionadas y clasificadas en base a los criterios de calidad. 
+                alguno de los criterio son: Distancia a recorrer, condiciones del terreno o del camino, iluminación (en jornadas nocturnas), etc. Para obtener la mejor experiencia de usuario</i>
+    </div>
+</section>
+<br>
+<hr>
+<span>&copy2021</span>
+    <script src="inicio.js"></script>
+    <script src="script.js"></script>
+    <script src="javasc.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+@media only screen and (min-width: 800px){
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/17/84/d0/40/vista-aerea-del-campus.jpg);
+    background-repeat: repeat;
+    /*background-image: linear-gradient(75deg, #fad787 0, #efda87 3.33%, #e4de88 6.67%, #d8e18c 10%, #cce491 13.33%, #bfe797 16.67%, #b2e99f 20%, #a5eba7 23.33%, #97edb1 26.67%, #89eebc 30%, #7bf0c7 33.33%, #6cf0d2 36.67%, #5df1de 40%, #4ff1e9 43.33%, #42f1f4 46.67%, #38f0ff 50%, #35efff 53.33%, #3beeff 56.67%, #47ecff 60%, #57eaff 63.33%, #69e7ff 66.67%, #7ce5ff 70%, #8fe1ff 73.33%, #a2deff 76.67%, #b4daff 80%, #c5d6ff 83.33%, #d6d2ff 86.67%, #e5ceff 90%, #f3caff 93.33%, #ffc6ff 96.67%, #ffc3ff 100%);*/
+    text-align: center;
+    align-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#rutase{
+    font-size: 3.4em;
+    color: white;
+    margin-left: 1.5em;
+}
+#quesomos{
+    font-size: 1em;
+    color: white;
+    margin-right: 15px;
+}
+#cabecera{
+    background: rgba( 100, 7, 190, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    width: auto;
+    height: 90px;
+    position: static;
+    margin-bottom: 2em;
+    text-align: left;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+div>span>a{
+    text-decoration-color: transparent;
+    color: white;
+}
+#enrutador{
+    width: 950px;
+    height: 440px;
+    margin: auto;
+    background: rgba( 100, 7, 190, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+}
+div#cabeini{
+    background: rgba( 255, 251, 0, 0.90 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    width: auto;
+    font-size: 1.6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        -webkit-text-fill-color: rgb(100, 07, 190);
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color:rgb(134, 134, 134) ;
+    border-top-left-radius: 10px;    
+    border-top-right-radius: 10px;
+    margin-bottom: 0.4em;
+    padding-top: 0.9em;
+    padding-bottom: 0.8em;
+}
+.punto{
+    width: 465px;
+    font-size: 1.3em;
+    height: 88px;
+    display: table-cell;
+    color: rgb(255, 251, 0);
+}
+#askk{
+    padding-top: 0.3em;
+    font-size: 2.2em;
+    height: 88px;
+    color: rgb(255, 251, 0);
+}
+select{
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 2.8em;
+    width: 215px;
+    font-size: 0.75em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: rgba( 100, 7, 190);
+}
+button#rurutas{
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    height: 2.2em;
+    width: 195px;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba( 100, 7, 190);
+    background-color: rgb(255, 251, 0);
+}
+
+#enrutacionario{
+    display: none;
+}
+#volver{
+    display: none;
+}
+#mapaderutas{
+    background: rgba( 100, 7, 190, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 25px;
+    margin: auto;
+    width: 96%;
+    height: 1350px;
+    padding-top: 0.2em;
+    display: none;
+}
+#maparu{
+    border-radius: 15px;
+    border-style:solid;
+    border-color: rgb(156, 0, 204);
+    width: 1080px;
+    height:720px;
+}
+
+#titilo{
+    text-align: left;
+}
+#titilo{
+    color: yellow;
+    font-size: 39px;
+}
+
+#download{
+    font-size: 30px;
+    border-radius: 15px;
+    width: 220px;
+    height: 40px;
+    background-color: rgb(251, 255, 0);
+    color: white;
+    padding: 0.2m;
+    box-shadow: 0px 0px 1px 1px rgb(225, 0, 255);
+    margin:auto;
+    margin-top: 0.2em;
+}
+div>a{
+    color: black;
+    font-size: 25px;
+}
+#infor{
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    font-size: 22px;
+    color: white;
+}
+}
+@media only screen and (max-width: 800px){
+    *{
+        display: none;
+    }
+}
