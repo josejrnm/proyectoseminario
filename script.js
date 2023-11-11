@@ -1,61 +1,43 @@
-var user = document.getElementById("usera");
+const height = document.querySelector('#height');
+const consult = document.querySelector('#consult')
+const inputFile = document.querySelector('#file');
+const imgArea = document.querySelector('.img-area');
 
-
-function captura() {    
-    var nombre = document.getElementById("nombre").value;
-    if (nombre==="") {
-        alert("Ingresa Un Nombre");
-    }else{
-        alert(`Bienvenido ${nombre}`);
-    }
-};
-function captura1() {  
-    var nombree = document.getElementById("nombre2").value;  
-    if (nombree==="") {
-        alert("Ingresa Un Nombre");
-    }else{
-        alert(`Bienvenido ${nombree}`);
-    }
-};
-function volve() {
-    document.getElementById("volver").innerHTML = "| <-Volver "
-}
-function cerra() {
-    document.getElementById("volver").innerHTML = "| Cerrar Sesion "
-}
-user.innerHTML = String(nombre);
-
-
-document.getElementById("ingru").addEventListener('click', ()=>{
-    if (document.getElementById("nombre").value != "") {
-        document.getElementById("tablaini").style.display = "none";
-        document.getElementById("enrutacionario").style.display = "block";
-        document.getElementById("volver").style.display = "inline";
-        
-    } 
-});
-
-document.getElementById("ingruinv").addEventListener('click', ()=>{
-    if (document.getElementById("nombre2").value != "") {
-        document.getElementById("tablaini").style.display = "none";
-        document.getElementById("enrutacionario").style.display = "block";
-        document.getElementById("volver").style.display = "inline";
-  }
-});
-
-var nombre = document.getElementById("nombre");
-var nombree = document.getElementById("nombre2");
-
-nombre.addEventListener('keyup',()=>{
-    var inputText = event.path[0].value;
-    document.querySelector('#usera').innerHTML = inputText;
-});
-nombree.addEventListener('keyup',()=>{
-    var inputText = event.path[0].value;
-    document.querySelector('#usera').innerHTML = inputText;
+imgArea.addEventListener('click', function () {
+	inputFile.click();
 })
 
-var imagen =  document.getElementById("maparu");
-document.getElementById("cabecera").addEventListener('click',()=>{
-    imagen.src = "Rutas/map2.jpg";
-});
+inputFile.addEventListener('change', function () {
+	const image = this.files[0]
+	if(image.size < 4000000) {
+		const reader = new FileReader();
+		reader.onload = ()=> {
+			const allImg = imgArea.querySelectorAll('img');
+			allImg.forEach(item=> item.remove());
+			const imgUrl = reader.result;
+			const img = document.createElement('img');
+			img.src = imgUrl;
+			imgArea.appendChild(img);
+			imgArea.classList.add('active');
+			imgArea.dataset.img = image.name;
+            console.log(image);
+		}
+		reader.readAsDataURL(image);
+	} else {
+		alert("Image size more than 5MB");
+	}
+})
+
+consult.addEventListener('click',function (params) {
+    fetch('http://127.0.0.1:8000/img/photos', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify({
+            })
+        }).then(() => {
+            setTextName('')
+            setTextPassword('')
+        })    
+})
